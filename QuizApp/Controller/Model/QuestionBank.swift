@@ -14,7 +14,7 @@ class QuestionBank {
     var list = [Question]()
     
     init() {
-        let item = Question(text: "In which year was Nintendo established?", correctAnswer: "23 September 1889", image: UIImage(named: "nintendoLogo")!)
+        let item = Question(image: "nintendoLogo", text: "In which year was Nintendo established?", optionA: "21 Dec 1864", optionB: "25 Jan 1901", optionC: "23 Sep 1889", optionD: "17. Nov 1945", correct: 3)
         
         list.append(item)
     }

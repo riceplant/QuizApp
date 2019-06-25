@@ -43,42 +43,52 @@
                                     <constraint firstItem="EUz-DB-QgF" firstAttribute="leading" secondItem="8iH-H8-fkW" secondAttribute="leading" constant="8" id="04A-pv-tlO"/>
                                     <constraint firstItem="Tb9-n1-62e" firstAttribute="leading" secondItem="8iH-H8-fkW" secondAttribute="leading" constant="8" id="2ZC-oL-7V4"/>
                                     <constraint firstAttribute="trailing" secondItem="Tb9-n1-62e" secondAttribute="trailing" constant="8" id="3ZA-3t-gza"/>
+                                    <constraint firstItem="Tb9-n1-62e" firstAttribute="centerX" secondItem="8iH-H8-fkW" secondAttribute="centerX" id="VMF-sf-sQC"/>
                                     <constraint firstItem="Tb9-n1-62e" firstAttribute="top" secondItem="EUz-DB-QgF" secondAttribute="bottom" constant="20" id="XRW-kz-uT0"/>
                                     <constraint firstAttribute="trailing" secondItem="EUz-DB-QgF" secondAttribute="trailing" constant="8" id="ZiB-Fy-cma"/>
                                     <constraint firstItem="Tb9-n1-62e" firstAttribute="top" secondItem="EUz-DB-QgF" secondAttribute="bottom" constant="20" id="aKU-LG-7Ai"/>
                                     <constraint firstAttribute="bottom" secondItem="Tb9-n1-62e" secondAttribute="bottom" constant="17" id="gQB-9S-YcV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tb9-n1-62e" secondAttribute="trailing" constant="8" id="kUb-8B-qBZ"/>
                                     <constraint firstAttribute="height" constant="310" id="ulb-Zd-963"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7g-m8-wma">
                                 <rect key="frame" x="0.0" y="328" width="375" height="299"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jft-Zm-LXa">
-                                        <rect key="frame" x="8" y="22" width="359" height="30"/>
-                                        <state key="normal" title="aButton"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jft-Zm-LXa">
+                                        <rect key="frame" x="8" y="24" width="359" height="30"/>
+                                        <state key="normal" title="aButton">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
-                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TmX-Ud-oGb"/>
+                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvE-sv-Qdw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liT-3F-O7j">
-                                        <rect key="frame" x="8" y="71" width="359" height="30"/>
-                                        <state key="normal" title="bButton"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liT-3F-O7j">
+                                        <rect key="frame" x="8" y="74" width="359" height="30"/>
+                                        <state key="normal" title="bButton">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
-                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UxY-lO-oL0"/>
+                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6a-7R-p6l"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZh-QZ-aUl">
-                                        <rect key="frame" x="8" y="122" width="359" height="30"/>
-                                        <state key="normal" title="cButton"/>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZh-QZ-aUl">
+                                        <rect key="frame" x="8" y="124" width="359" height="30"/>
+                                        <state key="normal" title="cButton">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
-                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mfr-lr-IMB"/>
+                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5eS-uf-aTX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dv9-gF-58K">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dv9-gF-58K">
                                         <rect key="frame" x="8" y="174" width="359" height="30"/>
-                                        <state key="normal" title="dButton"/>
+                                        <state key="normal" title="dButton">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
-                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MOK-2g-pji"/>
+                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oNs-dT-MoI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -87,6 +97,7 @@
                                     <constraint firstAttribute="trailing" secondItem="jft-Zm-LXa" secondAttribute="trailing" constant="8" id="1q0-4h-VUW"/>
                                     <constraint firstAttribute="trailing" secondItem="liT-3F-O7j" secondAttribute="trailing" constant="8" id="2R7-UG-gZ9"/>
                                     <constraint firstItem="liT-3F-O7j" firstAttribute="centerX" secondItem="Z7g-m8-wma" secondAttribute="centerX" id="2cz-Qd-eTB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dv9-gF-58K" secondAttribute="bottom" constant="95" id="77u-dY-CN5"/>
                                     <constraint firstItem="jft-Zm-LXa" firstAttribute="centerX" secondItem="Z7g-m8-wma" secondAttribute="centerX" id="8Bi-wT-dca"/>
                                     <constraint firstItem="tZh-QZ-aUl" firstAttribute="leading" secondItem="Z7g-m8-wma" secondAttribute="leading" constant="8" id="Chg-v8-Sp1"/>
                                     <constraint firstItem="jft-Zm-LXa" firstAttribute="leading" secondItem="Z7g-m8-wma" secondAttribute="leading" constant="8" id="DhC-hO-qBt"/>
