@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class ViewController: UIViewController {
     
@@ -21,6 +22,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var progressBar: UIView!
+    @IBOutlet weak var questionNumberProgress: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +43,11 @@ class ViewController: UIViewController {
         }
         
         checkAnswer()
+        
+        questionNumber += 1
+        
         nextQuestion()
+        
     }
     
     func checkAnswer() {
@@ -48,15 +55,16 @@ class ViewController: UIViewController {
         let rightAnswer = allQuestions.list[questionNumber].correctAnswer
         
         if rightAnswer == pickedAnswer {
-            print("nice")
+            ProgressHUD.showSuccess("Correct!")
+            
         } else {
-            print("noob")
+            ProgressHUD.showError("Wrong!")
         }
     }
     
     func nextQuestion() {
         
-        if questionNumber <= 2 {
+        if questionNumber <= 9 {
             
             imageView.image = UIImage(named: allQuestions.list[questionNumber].questionImage)
             questionLabel.text = allQuestions.list[questionNumber].question
@@ -65,7 +73,22 @@ class ViewController: UIViewController {
             optionCButton.setTitle(allQuestions.list[questionNumber].answerC, for: .normal)
             optionDButton.setTitle(allQuestions.list[questionNumber].answerD, for: .normal)
             
+            updateUI()
+            
+        } else {
+            restart()
         }
+    }
+    
+    func updateUI() {
+        questionNumberProgress.text = "\(questionNumber + 1) / 10"
+        
+        progressBar.frame.size.width = (view.frame.size.width / 10) * CGFloat(questionNumber + 1)
+    }
+    
+    func restart() {
+        questionNumber = 0
+        nextQuestion()
     }
 }
 
