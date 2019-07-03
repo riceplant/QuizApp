@@ -57,6 +57,7 @@
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jft-Zm-LXa">
                                         <rect key="frame" x="8" y="24" width="359" height="30"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="aButton">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -66,6 +67,7 @@
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liT-3F-O7j">
                                         <rect key="frame" x="8" y="74" width="359" height="30"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="bButton">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -75,6 +77,7 @@
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZh-QZ-aUl">
                                         <rect key="frame" x="8" y="124" width="359" height="30"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="cButton">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -84,6 +87,7 @@
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dv9-gF-58K">
                                         <rect key="frame" x="8" y="174" width="359" height="30"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="dButton">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -101,6 +105,16 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy5-By-SBB">
+                                        <rect key="frame" x="8" y="263" width="109" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="109" id="A1E-2X-LKS"/>
+                                            <constraint firstAttribute="height" constant="29" id="Fci-su-ouu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -112,10 +126,12 @@
                                     <constraint firstItem="tZh-QZ-aUl" firstAttribute="leading" secondItem="Z7g-m8-wma" secondAttribute="leading" constant="8" id="Chg-v8-Sp1"/>
                                     <constraint firstItem="jft-Zm-LXa" firstAttribute="leading" secondItem="Z7g-m8-wma" secondAttribute="leading" constant="8" id="DhC-hO-qBt"/>
                                     <constraint firstItem="liT-3F-O7j" firstAttribute="leading" secondItem="Z7g-m8-wma" secondAttribute="leading" constant="8" id="ECY-2g-TVc"/>
+                                    <constraint firstItem="hy5-By-SBB" firstAttribute="leading" secondItem="Z7g-m8-wma" secondAttribute="leading" constant="8" id="Fgv-7O-6cy"/>
                                     <constraint firstItem="Dv9-gF-58K" firstAttribute="leading" secondItem="tZh-QZ-aUl" secondAttribute="leading" id="Itg-KM-j3Q"/>
                                     <constraint firstAttribute="trailing" secondItem="tZh-QZ-aUl" secondAttribute="trailing" constant="8" id="Qkl-Yr-0d2"/>
                                     <constraint firstItem="liT-3F-O7j" firstAttribute="top" secondItem="jft-Zm-LXa" secondAttribute="bottom" constant="20" id="Yf0-1F-b4z"/>
                                     <constraint firstAttribute="trailing" secondItem="zWy-FG-70o" secondAttribute="trailing" constant="8" id="aby-9s-8FZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="hy5-By-SBB" secondAttribute="bottom" constant="7" id="gS4-Mg-XtQ"/>
                                     <constraint firstAttribute="bottom" secondItem="zWy-FG-70o" secondAttribute="bottom" constant="8" id="hNc-dY-bNd"/>
                                     <constraint firstItem="zWy-FG-70o" firstAttribute="top" secondItem="Dv9-gF-58K" secondAttribute="bottom" constant="59" id="m69-dj-hNw"/>
                                     <constraint firstItem="Dv9-gF-58K" firstAttribute="trailing" secondItem="tZh-QZ-aUl" secondAttribute="trailing" id="rri-tF-GYN"/>
@@ -170,6 +186,7 @@
                         <outlet property="progressBar" destination="wet-sN-MM7" id="Dqd-we-KgL"/>
                         <outlet property="questionLabel" destination="Tb9-n1-62e" id="RLL-Ew-Fdb"/>
                         <outlet property="questionNumberProgress" destination="zWy-FG-70o" id="mjg-iF-d78"/>
+                        <outlet property="scoreLabel" destination="hy5-By-SBB" id="RcR-Sd-x4s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

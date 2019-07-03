@@ -19,19 +19,19 @@ class QuestionBank {
         
         list.append(item)
         
-        list.append(Question(image: "nintendoLogo", text: "Which was Nintendo's first home console?", optionA: "NES", optionB: "Wii", optionC: "SNES", optionD: "Switch", correct: 1))
+        list.append(Question(image: "nesConsole", text: "Which was Nintendo's first home console?", optionA: "NES", optionB: "Wii", optionC: "SNES", optionD: "Switch", correct: 1))
         
-        list.append(Question(image: "nintendoLogo", text: "Which of these following consoles is not a Nintendo console?", optionA: "N64", optionB: "GameBoy", optionC: "Playstation", optionD: "GameCube", correct: 3))
+        list.append(Question(image: "gameCubeImage", text: "Which of these following consoles is not a Nintendo console?", optionA: "N64", optionB: "GameBoy", optionC: "Playstation", optionD: "GameCube", correct: 3))
         
-        list.append(Question(image: "nintendoLogo", text: "Which of these characters is not a Nintendo character?", optionA: "Link", optionB: "Samus", optionC: "Pikachu", optionD: "Sonic", correct: 4))
+        list.append(Question(image: "nintendoCharacters", text: "Which of these characters is not a Nintendo character?", optionA: "Link", optionB: "Samus", optionC: "Pikachu", optionD: "Sonic", correct: 4))
         
-        list.append(Question(image: "nintendoLogo", text: "What is the name of Nintendo's best-selling handheld console?", optionA: "SNES", optionB: "Switch", optionC: "PSP", optionD: "GameBoy", correct: 4))
+        list.append(Question(image: "gameBoy", text: "What is the name of Nintendo's best-selling handheld console?", optionA: "SNES", optionB: "Switch", optionC: "PSP", optionD: "GameBoy", correct: 4))
         
-        list.append(Question(image: "nintendoLogo", text: "What country is Nintendo from?", optionA: "Afghanista", optionB: "Korea", optionC: "Japan", optionD: "Vietnam", correct: 3))
+        list.append(Question(image: "japan", text: "What country is Nintendo from?", optionA: "Afghanistan", optionB: "Korea", optionC: "Japan", optionD: "Vietnam", correct: 3))
         
-        list.append(Question(image: "nintendoLogo", text: "Which of the following consoles are not from Nintendo?", optionA: "Game and Watch", optionB: "MegaDrive", optionC: "N3DS", optionD: "Xbox 360", correct: 4))
+        list.append(Question(image: "360", text: "Which one of the following consoles is not from Nintendo?", optionA: "Game and Watch", optionB: "GameCube", optionC: "N3DS", optionD: "Xbox 360", correct: 4))
         
-        list.append(Question(image: "nintendoLogo", text: "Which of the following game series can you not find on the SNES?", optionA: "Final Fantasy", optionB: "Diablo", optionC: "Metroid", optionD: "Super Mario Bros", correct: 2))
+        list.append(Question(image: "diablo", text: "Which of the following game series can you not find on the SNES?", optionA: "Final Fantasy", optionB: "Diablo", optionC: "Metroid", optionD: "Super Mario Bros", correct: 2))
         
         list.append(Question(image: "nintendoLogo", text: "What is the rough translation of Nintendo", optionA: "God wills it", optionB: "praise be unto him", optionC: "Leave luck to heaven", optionD: "Fun Times everywhere", correct: 3))
         
