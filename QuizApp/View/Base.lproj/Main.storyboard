@@ -115,6 +115,19 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k34-Kk-lfN">
+                                        <rect key="frame" x="319" y="225" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="bb1-qE-Qxk"/>
+                                            <constraint firstAttribute="width" constant="50" id="tuP-AS-kuY"/>
+                                        </constraints>
+                                        <state key="normal" title="Restart">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="restartButtonPressedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4J-o8-A4u"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -131,6 +144,8 @@
                                     <constraint firstAttribute="trailing" secondItem="tZh-QZ-aUl" secondAttribute="trailing" constant="8" id="Qkl-Yr-0d2"/>
                                     <constraint firstItem="liT-3F-O7j" firstAttribute="top" secondItem="jft-Zm-LXa" secondAttribute="bottom" constant="20" id="Yf0-1F-b4z"/>
                                     <constraint firstAttribute="trailing" secondItem="zWy-FG-70o" secondAttribute="trailing" constant="8" id="aby-9s-8FZ"/>
+                                    <constraint firstItem="zWy-FG-70o" firstAttribute="top" secondItem="k34-Kk-lfN" secondAttribute="bottom" constant="8" id="cGA-9r-9JN"/>
+                                    <constraint firstAttribute="trailing" secondItem="k34-Kk-lfN" secondAttribute="trailing" constant="6" id="dwn-lA-EWK"/>
                                     <constraint firstAttribute="bottom" secondItem="hy5-By-SBB" secondAttribute="bottom" constant="7" id="gS4-Mg-XtQ"/>
                                     <constraint firstAttribute="bottom" secondItem="zWy-FG-70o" secondAttribute="bottom" constant="8" id="hNc-dY-bNd"/>
                                     <constraint firstItem="zWy-FG-70o" firstAttribute="top" secondItem="Dv9-gF-58K" secondAttribute="bottom" constant="59" id="m69-dj-hNw"/>
@@ -186,6 +201,7 @@
                         <outlet property="progressBar" destination="wet-sN-MM7" id="Dqd-we-KgL"/>
                         <outlet property="questionLabel" destination="Tb9-n1-62e" id="RLL-Ew-Fdb"/>
                         <outlet property="questionNumberProgress" destination="zWy-FG-70o" id="mjg-iF-d78"/>
+                        <outlet property="restartButton" destination="k34-Kk-lfN" id="AgG-jr-ma8"/>
                         <outlet property="scoreLabel" destination="hy5-By-SBB" id="RcR-Sd-x4s"/>
                     </connections>
                 </viewController>

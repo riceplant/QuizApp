@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var optionBButton: UIButton!
     @IBOutlet weak var optionCButton: UIButton!
     @IBOutlet weak var optionDButton: UIButton!
+    @IBOutlet weak var restartButton: UIButton!
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -49,6 +50,20 @@ class ViewController: UIViewController {
         questionNumber += 1
         
         nextQuestion()
+        
+    }
+    
+    @IBAction func restartButtonPressed(_sender: UIButton) {
+        
+        let alert = UIAlertController(title: "Are you sure you want to restart the quiz?", message: "You will lose your current score.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
+        
+        alert.addAction(UIAlertAction(title: "Restart", style: .destructive, handler: { (UIAlertAction) in
+            self.restart()
+        }))
+        
+        self.present(alert, animated: true)
         
     }
     
